@@ -120,6 +120,8 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 .photo-add { align-self:flex-start; }
 .photo-add:disabled { opacity:.5; cursor:default; }
 .form-privacy { margin:14px 0 0; }
+.service-link { display:block; }
+.service-link:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
 </style>
 </head>
 <body>
@@ -129,7 +131,7 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 <section class="hero" id="accueil"><div class="wrap hero-grid"><div><div class="eyebrow">Expertise · Précision · Confiance</div><h1>Votre véhicule.<br>Notre savoir-faire.<br><span>Un résultat impeccable.</span></h1><p>Réparation de carrosserie, peinture automobile et remise en état : notre équipe vous accompagne avec soin, du premier regard jusqu'aux dernières finitions.</p><div class="actions"><a class="btn" href="#contact">Obtenir une estimation gratuite ↗</a></div><div class="hero-note"><span class="check">✓</span> Service local · Shefford, Bromont, Granby et environs</div></div><aside class="hero-card"><div class="eyebrow">Carrosserie automobile</div><div class="big">Du travail<br><span>bien fait.</span></div><p>Des solutions adaptées à votre véhicule, avec une attention particulière aux détails et aux finitions.</p><hr><a class="btn" style="width:100%" href="tel:+14509564040" aria-label="Appelez-nous au 450 956-4040">☎ 450 956-4040</a></aside></div></section>
 <div class="trust"><div class="wrap trust-grid"><div class="trust-item"><span class="trust-icon">✳</span><div><strong>Réparation de carrosserie</strong><small>Du dommage à la finition</small></div></div><div class="trust-item"><span class="trust-icon">◉</span><div><strong>Peinture automobile</strong><small>Un fini soigné</small></div></div><div class="trust-item"><span class="trust-icon">⌁</span><div><strong>Équipement spécialisé</strong><small>Des solutions techniques</small></div></div><div class="trust-item"><span class="trust-icon">✓</span><div><strong>Service de proximité</strong><small>À votre écoute</small></div></div></div></div>
 <section id="services"><div class="wrap"><div class="section-head"><div><div class="kicker">Nos expertises</div><h2>Des services complets<br>pour votre véhicule.</h2></div><p>Qu'il s'agisse d'une petite imperfection ou d'une réparation majeure, nous évaluons vos besoins et vous proposons une solution adaptée.</p></div><div class="services">
-<article class="service"><div class="num">01 / DSP</div><h3>Débosselage sans peinture</h3><p>Réparation de bosses, impacts et dommages de grêle en préservant la peinture d'origine lorsque possible.</p><span class="arrow">↗</span></article>
+<a class="service service-link" href="/debosselage-sans-peinture-dsp.html"><div class="num">01 / DSP</div><h3>Débosselage sans peinture</h3><p>Réparation de bosses, impacts et dommages de grêle en préservant la peinture d’origine lorsque possible.</p><span class="arrow" aria-hidden="true">↗</span></a>
 <article class="service"><div class="num">02 / PPF</div><h3>Pellicule pare-pierre</h3><p>Protection PPF pour aider à préserver la peinture contre les éclats et les impacts de la route.</p><span class="arrow">↗</span></article>
 <article class="service"><div class="num">03 / PEINTURE</div><h3>Carrosserie et peinture</h3><p>Réparation de dommages, bosses, égratignures, rouille et remise en peinture des panneaux.</p><span class="arrow">↗</span></article>
 <article class="service"><div class="num">04 / ESTHÉTIQUE</div><h3>Esthétique automobile</h3><p>Polissage, correction de peinture et raffinement de la finition pour raviver l'apparence du véhicule.</p><span class="arrow">↗</span></article>
@@ -153,6 +155,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
   const addPhoto = document.getElementById('add-photo');
   const message = document.getElementById('form-message');
   const submit = form.querySelector('button[type="submit"]');
+  if (new URLSearchParams(window.location.search).get('service') === 'dsp') {
+    document.getElementById('service').value = 'Débosselage sans peinture';
+  }
   const maxPhotos = 5;
   const maxBytes = 10000000;
   let photoNumber = 1;
