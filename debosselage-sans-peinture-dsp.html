@@ -151,6 +151,21 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 .dsp-contact-actions .btn.ghost { border-color:#fff; }
 @media(max-width:900px) { .dsp-intro-grid { grid-template-columns:1fr; gap:30px; } .dsp-benefits { grid-template-columns:1fr; } .dsp-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:560px) { .dsp-intro-grid { padding-top:34px; } .dsp-lead { font-size:16px; } .dsp-benefit { padding:24px; } .dsp-gallery { gap:10px; } .dsp-photo figcaption { padding:10px; font-size:11px; } }
+
+.gallery-lightbox { position:fixed; inset:0; width:100vw; max-width:none; height:100dvh; max-height:none; margin:0; border:0; padding:24px; background:rgba(9,15,19,.97); color:white; }
+.gallery-lightbox::backdrop { background:rgba(0,0,0,.8); }
+.gallery-lightbox[open] { display:flex; flex-direction:column; align-items:center; gap:14px; }
+.lightbox-toolbar { width:min(100%,1200px); display:flex; align-items:center; justify-content:space-between; gap:18px; flex-shrink:0; }
+.lightbox-toolbar h2 { font-size:20px; line-height:1.3; letter-spacing:-.02em; margin:0; }
+.lightbox-button { border:1px solid #647079; border-radius:4px; background:#1a2227; color:white; padding:12px 16px; font-size:14px; font-weight:750; cursor:pointer; flex-shrink:0; }
+.lightbox-button:hover { background:#303b43; }
+.lightbox-button:focus-visible { outline:3px solid var(--accent2); outline-offset:3px; }
+.lightbox-stage { width:100%; min-height:0; flex:1; display:flex; align-items:center; justify-content:center; }
+.lightbox-figure { margin:0; max-width:100%; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.lightbox-figure img { display:block; width:auto; height:auto; max-width:100%; max-height:calc(100dvh - 190px); object-fit:contain; }
+.lightbox-figure figcaption { font-size:13px; color:#c4cdd1; text-align:center; }
+.lightbox-navigation { display:flex; justify-content:center; gap:16px; flex-shrink:0; }
+@media(max-width:560px) { .gallery-lightbox { padding:16px; } .lightbox-toolbar h2 { font-size:16px; } .lightbox-button { font-size:13px; padding:10px 12px; } .lightbox-navigation { gap:12px; } .lightbox-figure img { max-height:calc(100dvh - 175px); } }
 </style>
 </head>
 <body>
@@ -159,22 +174,80 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 <main id="contenu">
 <section class="dsp-intro"><div class="wrap"><nav class="dsp-breadcrumbs" aria-label="Fil d’Ariane"><a href="/">Accueil</a><span aria-hidden="true">/</span><a href="/#services">Services</a><span aria-hidden="true">/</span><span aria-current="page">DSP</span></nav><div class="dsp-intro-grid"><div><div class="eyebrow">01 / DSP · Débosselage</div><h1>Débosselage<br>sans peinture<br><em>(DSP)</em></h1></div><div><p class="dsp-lead">Retrouvez une carrosserie soignée en conservant la peinture d’origine. Nous évaluons les bosses, les petits impacts et les dommages de grêle pour vous proposer la réparation adaptée à votre véhicule.</p><div class="actions"><a class="btn" href="/?service=dsp#contact">Demander une estimation gratuite ↗</a><a class="btn ghost" href="tel:+14509564040">☎ 450 956-4040</a></div></div></div></div></section>
 <section><div class="wrap"><div class="kicker">Les avantages du DSP</div><h2>Une solution qui préserve<br>votre peinture d’origine.</h2><div class="dsp-benefits"><article class="dsp-benefit"><span class="number">1.</span><h3>Épargnez du temps<br>et de l’argent</h3><p>Lorsque les dommages s’y prêtent, le DSP peut réduire le temps d’intervention et le coût d’une réparation avec remise en peinture.</p></article><article class="dsp-benefit"><span class="number">2.</span><h3>Conservez la<br>peinture d’origine</h3><p>Le travail vise à remettre la carrosserie en forme sans repeindre le panneau, lorsque l’état de la peinture le permet.</p></article><article class="dsp-benefit"><span class="number">3.</span><h3>Limitez les produits<br>de remise en peinture</h3><p>Une réparation sans nouvelle peinture permet de limiter l’utilisation de peinture et de produits associés.</p></article></div><div class="dsp-explanation"><p><strong>Chaque bosse est différente.</strong> L’emplacement du dommage, son importance et l’état de la peinture déterminent si le DSP est approprié. Envoyez-nous vos photos : notre équipe pourra vous guider sur les prochaines étapes.</p></div></div></section>
-<section class="dsp-gallery-section"><div class="wrap"><div class="section-head"><div><div class="kicker">En images</div><h2>Le travail du détail.</h2></div><p>Des exemples de débosselage sans peinture. Cliquez sur une photo pour l’agrandir.</p></div><div class="dsp-gallery"><figure class="dsp-photo"><a href="/dsp-01.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 1"><img src="/dsp-01.jpg" alt="Exemple de débosselage sans peinture — photo 1" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 01</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-02.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 2"><img src="/dsp-02.jpg" alt="Exemple de débosselage sans peinture — photo 2" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 02</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-03.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 3"><img src="/dsp-03.jpg" alt="Exemple de débosselage sans peinture — photo 3" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 03</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-04.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 4"><img src="/dsp-04.jpg" alt="Exemple de débosselage sans peinture — photo 4" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 04</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-05.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 5"><img src="/dsp-05.jpg" alt="Exemple de débosselage sans peinture — photo 5" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 05</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-06.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 6"><img src="/dsp-06.jpg" alt="Exemple de débosselage sans peinture — photo 6" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 06</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-07.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 7"><img src="/dsp-07.jpg" alt="Exemple de débosselage sans peinture — photo 7" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 07</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-08.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 8"><img src="/dsp-08.jpg" alt="Exemple de débosselage sans peinture — photo 8" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 08</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-09.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 9"><img src="/dsp-09.jpg" alt="Exemple de débosselage sans peinture — photo 9" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 09</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-10.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 10"><img src="/dsp-10.jpg" alt="Exemple de débosselage sans peinture — photo 10" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 10</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-11.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 11"><img src="/dsp-11.jpg" alt="Exemple de débosselage sans peinture — photo 11" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 11</figcaption></figure>
-<figure class="dsp-photo"><a href="/dsp-12.jpg" target="_blank" rel="noopener" aria-label="Agrandir la photo de débosselage 12"><img src="/dsp-12.jpg" alt="Exemple de débosselage sans peinture — photo 12" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 12</figcaption></figure></div></div></section>
+<section class="dsp-gallery-section"><div class="wrap"><div class="section-head"><div><div class="kicker">En images</div><h2>Le travail du détail.</h2></div><p>Des exemples de débosselage sans peinture. Cliquez sur une photo pour l’agrandir.</p></div><div class="dsp-gallery"><figure class="dsp-photo"><a href="/dsp-01.jpg" aria-label="Agrandir la photo de débosselage 1"><img src="/dsp-01.jpg" alt="Exemple de débosselage sans peinture — photo 1" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 01</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-02.jpg" aria-label="Agrandir la photo de débosselage 2"><img src="/dsp-02.jpg" alt="Exemple de débosselage sans peinture — photo 2" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 02</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-03.jpg" aria-label="Agrandir la photo de débosselage 3"><img src="/dsp-03.jpg" alt="Exemple de débosselage sans peinture — photo 3" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 03</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-04.jpg" aria-label="Agrandir la photo de débosselage 4"><img src="/dsp-04.jpg" alt="Exemple de débosselage sans peinture — photo 4" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 04</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-05.jpg" aria-label="Agrandir la photo de débosselage 5"><img src="/dsp-05.jpg" alt="Exemple de débosselage sans peinture — photo 5" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 05</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-06.jpg" aria-label="Agrandir la photo de débosselage 6"><img src="/dsp-06.jpg" alt="Exemple de débosselage sans peinture — photo 6" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 06</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-07.jpg" aria-label="Agrandir la photo de débosselage 7"><img src="/dsp-07.jpg" alt="Exemple de débosselage sans peinture — photo 7" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 07</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-08.jpg" aria-label="Agrandir la photo de débosselage 8"><img src="/dsp-08.jpg" alt="Exemple de débosselage sans peinture — photo 8" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 08</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-09.jpg" aria-label="Agrandir la photo de débosselage 9"><img src="/dsp-09.jpg" alt="Exemple de débosselage sans peinture — photo 9" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 09</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-10.jpg" aria-label="Agrandir la photo de débosselage 10"><img src="/dsp-10.jpg" alt="Exemple de débosselage sans peinture — photo 10" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 10</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-11.jpg" aria-label="Agrandir la photo de débosselage 11"><img src="/dsp-11.jpg" alt="Exemple de débosselage sans peinture — photo 11" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 11</figcaption></figure>
+<figure class="dsp-photo"><a href="/dsp-12.jpg" aria-label="Agrandir la photo de débosselage 12"><img src="/dsp-12.jpg" alt="Exemple de débosselage sans peinture — photo 12" width="768" height="1024" loading="lazy" decoding="async"></a><figcaption>Exemple 12</figcaption></figure></div></div></section>
 <section><div class="wrap dsp-questions"><div class="kicker">Vos questions</div><h2>Avant de nous confier<br>votre véhicule.</h2><details><summary>Quels dommages peuvent être évalués pour le DSP?</summary><p>Les bosses de stationnement, certains petits impacts et les dommages de grêle peuvent être évalués. Le choix de la technique dépend de la zone touchée et de l’état de la peinture.</p></details><details><summary>Et si la peinture est abîmée?</summary><p>Le DSP ne répare pas la peinture. Si elle est fissurée ou écaillée, nous évaluerons avec vous les travaux de carrosserie et de peinture nécessaires.</p></details><details><summary>Comment demander une estimation?</summary><p>Appelez-nous au <a href="tel:+14509564040">450 956-4040</a> ou utilisez notre <a href="/?service=dsp#contact" style="color:var(--accent);text-decoration:underline">formulaire d’estimation</a>. Vous pouvez y joindre des photos et décrire les dommages.</p></details></div></section>
 <section class="cta-band"><div class="wrap cta-inner"><div><div style="font-size:13px;letter-spacing:.12em;font-weight:800;margin-bottom:12px">PRENEZ RENDEZ-VOUS</div><h2>Un devis gratuit pour votre DSP.</h2><p>Shefford, Bromont, Granby et environs.</p></div><div class="dsp-contact-actions"><a class="btn" href="/?service=dsp#contact">Envoyer mes photos ↗</a><a class="btn ghost" href="tel:+14509564040">☎ 450 956-4040</a></div></div></section>
 </main>
 <footer><div class="wrap footer-inner"><div><a class="brand" href="/"><span class="brand-mark">CP</span><span>CARROSSERIE <span style="color:#ff725c">& PEINTURE</span><small>SHEFFORD · QUÉBEC</small></span></a><p>© <span id="year"></span> Carrosserie & Peinture Shefford. Tous droits réservés.</p></div><div class="links"><a href="/#services">Services</a><a href="/#apropos">À propos</a><a href="/?service=dsp#contact">Contact</a><a href="tel:+14509564040">450 956-4040</a></div></div></footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<dialog class="gallery-lightbox" id="gallery-lightbox" aria-labelledby="lightbox-title"><div class="lightbox-toolbar"><h2 id="lightbox-title">Photos de débosselage sans peinture</h2><button class="lightbox-button" id="lightbox-close" type="button" aria-label="Fermer la photo">Fermer ×</button></div><div class="lightbox-stage" id="lightbox-stage"><figure class="lightbox-figure"><img id="lightbox-image" alt=""><figcaption id="lightbox-caption" aria-live="polite"></figcaption></figure></div><div class="lightbox-navigation"><button class="lightbox-button" id="lightbox-previous" type="button" aria-label="Photo précédente">← Précédente</button><button class="lightbox-button" id="lightbox-next" type="button" aria-label="Photo suivante">Suivante →</button></div></dialog>
+<script>
+(function () {
+  const dialog = document.getElementById('gallery-lightbox');
+  if (!dialog || typeof dialog.showModal !== 'function') return;
+  const links = Array.from(document.querySelectorAll('.dsp-gallery a'));
+  const image = document.getElementById('lightbox-image');
+  const caption = document.getElementById('lightbox-caption');
+  const close = document.getElementById('lightbox-close');
+  let current = 0;
+  let returnFocus = null;
+  let previousOverflow = '';
+  function showPhoto(index) {
+    current = (index + links.length) % links.length;
+    const thumbnail = links[current].querySelector('img');
+    image.alt = thumbnail ? thumbnail.alt : 'Photo de la galerie';
+    image.src = links[current].href;
+    caption.textContent = 'Photo ' + (current + 1) + ' / ' + links.length;
+  }
+  links.forEach(function (link, index) {
+    link.addEventListener('click', function (event) {
+      if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      returnFocus = link;
+      previousOverflow = document.body.style.overflow;
+      showPhoto(index);
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+      close.focus();
+    });
+  });
+  close.addEventListener('click', function () { dialog.close(); });
+  document.getElementById('lightbox-previous').addEventListener('click', function () { showPhoto(current - 1); });
+  document.getElementById('lightbox-next').addEventListener('click', function () { showPhoto(current + 1); });
+  dialog.addEventListener('keydown', function (event) {
+    if (event.key === 'Tab') {
+      const controls = Array.from(dialog.querySelectorAll('button')).filter(function (button) { return !button.disabled; });
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    }
+    if (event.key === 'ArrowLeft') { event.preventDefault(); showPhoto(current - 1); }
+    if (event.key === 'ArrowRight') { event.preventDefault(); showPhoto(current + 1); }
+  });
+  dialog.addEventListener('click', function (event) {
+    if (event.target === dialog || event.target.id === 'lightbox-stage') dialog.close();
+  });
+  dialog.addEventListener('close', function () {
+    document.body.style.overflow = previousOverflow;
+    image.removeAttribute('src');
+    if (returnFocus && document.contains(returnFocus)) returnFocus.focus({ preventScroll: true });
+  });
+  image.addEventListener('error', function () {
+    if (dialog.open && image.hasAttribute('src')) caption.textContent = 'Cette photo ne peut pas être chargée. Essayez la suivante.';
+  });
+})();
+</script>
 </body>
 </html>
