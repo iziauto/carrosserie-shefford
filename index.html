@@ -159,7 +159,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   const requestedService = serviceParams.get('service');
   const serviceNames = { dsp: 'Débosselage sans peinture', ppf: 'Pellicule pare-pierre / PPF' };
   if (serviceNames[requestedService]) document.getElementById('service').value = serviceNames[requestedService];
-  const ppfPlans = { base: 'Base', 'avant-partiel': 'Avant partiel', 'avant-complet': 'Avant complet', complet: 'Complet' };
+  const ppfPlans = { base: 'Base', 'avant-partiel': 'Devant partiel', 'avant-complet': 'Devant complet', complet: 'Complet' };
   const requestedPlan = ppfPlans[serviceParams.get('forfait')];
   if (requestedService === 'ppf' && requestedPlan && !document.getElementById('message').value) {
     document.getElementById('message').value = 'Je souhaite une estimation pour le forfait PPF « ' + requestedPlan + ' ».';
