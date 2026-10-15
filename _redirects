@@ -39,3 +39,9 @@
 /contactez-nous/ /#contact 301
 /debosselage-sans-peinture-dsp/ /debosselage-sans-peinture-dsp 301
 /protection-pare-pierre-pellicule/ /protection-pare-pierre-pellicule 301
+
+# Additional legacy URLs linked from the old WordPress homepage.
+/debosselage-sans-peinture /debosselage-sans-peinture-dsp 301
+/debosselage-sans-peinture/ /debosselage-sans-peinture-dsp 301
+/protection-pare-pierre /protection-pare-pierre-pellicule 301
+/protection-pare-pierre/ /protection-pare-pierre-pellicule 301

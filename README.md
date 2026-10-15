@@ -57,7 +57,7 @@ FormSubmit documentation: https://formsubmit.co/documentation
 - Service pages include Service and BreadcrumbList structured data. The home page includes WebSite data.
 - `_headers` applies `X-Robots-Tag: noindex` only to `carrosserie-shefford.iziauto.workers.dev`. Crawling remains allowed so search engines can see that header. Do not add `Disallow: /` to robots.txt.
 - Canonicals and sitemap.xml use https://carrosserieshefford.com. They are prepared for launch; the public domain still serves Bluehost until the owner approves the switch. Do not submit the preview sitemap to Search Console.
-- Social sharing images and the business schema image temporarily use the working Cloudflare preview asset URLs so previews load before domain launch.
+- This launch version uses https://carrosserieshefford.com for social images, business schema images and the contact form confirmation URL. Publish it with the approved domain cutover.
 - Existing WordPress service paths are preserved, with trailing slashes redirected to the new canonical paths. `/contactez-nous` and `/contactez-nous/` redirect to the homepage contact section.
 - The homepage hero image is preloaded. The PPF hero has high fetch priority. Existing gallery lazy loading is preserved and image dimensions match the actual files.
 
@@ -65,9 +65,17 @@ When the owner approves domain launch:
 
 1. Complete the separate DNS/hosting migration plan while preserving email service. This SEO change does not modify DNS or Bluehost.
 2. Verify the domain serves all three new pages over HTTPS, that the canonical paths return 200, and the previous WordPress URLs redirect correctly. Check both www and the bare domain, and preserve any additional indexed legacy URLs found in Search Console.
-3. Replace `https://carrosserie-shefford.iziauto.workers.dev/assets/` with `https://carrosserieshefford.com/assets/` in the three HTML files, updating social/schema image URLs together. Update the form's `_next` URL to the production domain as described above.
+3. This launch version already uses the production domain for social/schema images and the form's `_next` URL. Verify they load after connecting the domain.
 4. Confirm the custom-domain responses have no `noindex` header and robots.txt and sitemap.xml load. Keep the host-specific preview noindex rule.
 5. Submit `https://carrosserieshefford.com/sitemap.xml` in the owner's existing Google Search Console property and inspect the three canonical URLs. Since the public domain is unchanged, Google's Change of Address tool is not needed.
 6. Confirm the existing Google Business Profile uses the correct website, Gmail address and weekday hours. Monitor Search Console indexing, crawl errors and performance after launch.
 
 References: [Google Local Business](https://developers.google.com/search/docs/appearance/structured-data/local-business), [Google noindex](https://developers.google.com/search/docs/crawling-indexing/block-indexing), [Cloudflare static headers](https://developers.cloudflare.com/workers/static-assets/headers/).
+
+## Domain launch configuration
+
+The main domain remains `carrosserieshefford.com`. Connect the existing `carrosserie-shefford` Worker to the root domain with a Cloudflare Custom Domain. Use a Cloudflare redirect rule to send `www.carrosserieshefford.com` to the main HTTPS domain, preserving paths and query strings. The existing proxied www CNAME can stay in place for that redirect.
+
+The public domain already uses `katelyn.ns.cloudflare.com` and `toby.ns.cloudflare.com`. No nameserver change is required. Before cutover, the root A record is `66.235.200.145` (proxied, Auto TTL). The complete pre-launch DNS export and repository ZIP are saved outside this repository. Bluehost hosting and registration should remain available for rollback while launch is verified.
+
+Legacy `/debosselage-sans-peinture` and `/protection-pare-pierre` URLs, with and without trailing slashes, also redirect to the new service pages.
