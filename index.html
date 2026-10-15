@@ -151,11 +151,11 @@ h1 span { color:#ff725c; }
 .hero-card hr { border:0; border-top:1px solid #445057; margin:18px 0; }
 .hero-card .detail { display:flex; justify-content:space-between; gap:10px; font-size:12px; color:#d5dcdf; }
 .hero-card .detail strong { color:white; }
-.trust { background:var(--surface); border-bottom:1px solid var(--line); }
+.trust { --line:rgba(23,32,39,.2); --muted:#263239; background:linear-gradient(115deg,#ff775f 0%,#ffad83 100%); color:#172027; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
 .trust-grid { display:grid; grid-template-columns:repeat(3,1fr); }
 .trust-item { padding:24px 20px; border-right:1px solid var(--line); display:flex; gap:13px; align-items:flex-start; }
 .trust-item:first-child { border-left:1px solid var(--line); }
-.trust-icon { color:var(--accent); font-size:23px; font-weight:900; }
+.trust-icon { color:currentColor; font-size:23px; font-weight:900; }
 .trust-item strong { display:block; font-size:15px; line-height:1.35; }
 .trust-item small { display:block; color:var(--muted); margin-top:7px; font-size:12px; line-height:1.6; }
 section { padding:88px 0; }
