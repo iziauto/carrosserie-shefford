@@ -33,3 +33,9 @@
 /ppf-photo-14.jpeg /assets/images/ppf/ppf-photo-14.jpeg 301
 /ppf-photo-15.jpeg /assets/images/ppf/ppf-photo-15.jpeg 301
 /ppf-photo-16.jpeg /assets/images/ppf/ppf-photo-16.jpeg 301
+
+# Preserve the previous WordPress contact page and service URLs.
+/contactez-nous /#contact 301
+/contactez-nous/ /#contact 301
+/debosselage-sans-peinture-dsp/ /debosselage-sans-peinture-dsp 301
+/protection-pare-pierre-pellicule/ /protection-pare-pierre-pellicule 301

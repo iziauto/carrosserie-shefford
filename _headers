@@ -1,0 +1,3 @@
+# Keep the Cloudflare preview out of search results. This rule does not match the custom domain.
+https://carrosserie-shefford.iziauto.workers.dev/*
+  X-Robots-Tag: noindex
