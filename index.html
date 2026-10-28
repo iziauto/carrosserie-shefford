@@ -226,11 +226,6 @@ footer p { color:#aeb8be; font-size:11px; margin:7px 0 0; }
 footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size:12px; }
 @media(max-width:900px) { nav { gap:14px; } nav a:not(.btn) { display:none; } .hero-grid { grid-template-columns:1fr; } .hero-card { justify-self:start; width:100%; max-width:500px; } .services { grid-template-columns:repeat(2,1fr); }   .about-grid,.contact-grid { grid-template-columns:1fr; gap:35px; } }
 @media(max-width:560px) { header .brand { font-size:16px; } header .brand small { font-size:15px; } .wrap { width:min(100% - 28px,1160px); } .topbar-inner { align-items:flex-start; flex-direction:column; gap:5px; } .nav { min-height:70px; flex-wrap:wrap; gap:12px; padding:12px 0; } .brand { font-size:13px; } .brand-mark { width:38px; height:38px; } .nav nav .btn { padding:11px 12px; font-size:14px; } .hero { min-height:auto; } .hero-grid { padding:64px 0; gap:34px; } .hero p { font-size:15px; } section { padding:65px 0; } .section-head { display:block; } .section-head p { margin-top:16px; } .services { grid-template-columns:1fr; } .service { min-height:auto; } .service h3 { margin-top:16px; } .trust-item { padding:17px 12px; } .trust-item strong { font-size:14px; } .trust-item small { font-size:12px; } .points,.process-grid,.form-grid { grid-template-columns:1fr; } .cta-inner { align-items:flex-start; flex-direction:column; } .form-card { padding:20px; } .footer-inner { align-items:flex-start; flex-direction:column; } }
-.photo-row { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
-.photo-row input { min-width:0; }
-.photo-add,.photo-remove { background:var(--surface2); border:1px solid var(--line); color:var(--ink); border-radius:3px; padding:10px 12px; cursor:pointer; font-size:13px; font-weight:750; }
-.photo-add { align-self:flex-start; }
-.photo-add:disabled { opacity:.5; cursor:default; }
 .form-privacy { margin:14px 0 0; }
 .service-link { display:block; }
 .service-link:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
@@ -270,7 +265,7 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 <section><div class="wrap"><div class="section-head"><div><div class="kicker">Comment ça fonctionne</div><h2>Simple, du début<br>à la fin.</h2></div><p>Vous avez des dommages ou souhaitez améliorer l'apparence de votre véhicule? Commencez par nous expliquer votre besoin.</p></div><div class="process-grid"><div class="process"><div class="n">01</div><h3>Contactez-nous</h3><p>Appelez-nous ou envoyez une demande avec une description des dommages et des photos si vous en avez.</p></div><div class="process"><div class="n">02</div><h3>Évaluation</h3><p>Nous prenons connaissance de votre demande et discutons des prochaines étapes pour évaluer les travaux.</p></div><div class="process"><div class="n">03</div><h3>Plan de réparation</h3><p>Nous vous expliquons les options et organisons la suite avec vous.</p></div></div></div></section>
 <section class="cta-band" aria-labelledby="reviews-title"><div class="wrap cta-inner"><div class="reviews-heading"><div><h2 id="reviews-title">Les avis de nos clients.</h2><p>Quelques avis 5 étoiles publiés sur Google.</p></div><a class="btn" href="https://www.google.com/maps/place/Carrosserie+Peinture+Shefford/@45.3819315,-72.6529136,17z/data=!4m8!3m7!1s0x4cc9d134112291f9:0xee387b498bbe7837!8m2!3d45.3819315!4d-72.6529136!9m1!1b1!16s%2Fg%2F11wg3wqjmn?entry=ttu&amp;g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" aria-label="Lire les avis Google — ouvre un nouvel onglet">Lire les avis Google ↗</a></div><div class="reviews-grid"><figure class="review-card"><span class="review-stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><blockquote cite="https://www.google.com/maps/place/Carrosserie+Peinture+Shefford/@45.3819315,-72.6529136,17z/data=!4m8!3m7!1s0x4cc9d134112291f9:0xee387b498bbe7837!8m2!3d45.3819315!4d-72.6529136!9m1!1b1!16s%2Fg%2F11wg3wqjmn?entry=ttu&amp;g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D">«&nbsp;Un service impeccable !&nbsp;»</blockquote><figcaption><strong>Pascale Duquette</strong><span>Avis Google · 5/5</span></figcaption></figure><figure class="review-card"><span class="review-stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><blockquote cite="https://www.google.com/maps/place/Carrosserie+Peinture+Shefford/@45.3819315,-72.6529136,17z/data=!4m8!3m7!1s0x4cc9d134112291f9:0xee387b498bbe7837!8m2!3d45.3819315!4d-72.6529136!9m1!1b1!16s%2Fg%2F11wg3wqjmn?entry=ttu&amp;g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D">«&nbsp;Très bon travail. Très satisfaite.&nbsp;»</blockquote><figcaption><strong>claudie lagueux</strong><span>Avis Google · 5/5</span></figcaption></figure><figure class="review-card"><span class="review-stars" role="img" aria-label="5 étoiles sur 5">★★★★★</span><blockquote cite="https://www.google.com/maps/place/Carrosserie+Peinture+Shefford/@45.3819315,-72.6529136,17z/data=!4m8!3m7!1s0x4cc9d134112291f9:0xee387b498bbe7837!8m2!3d45.3819315!4d-72.6529136!9m1!1b1!16s%2Fg%2F11wg3wqjmn?entry=ttu&amp;g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D">«&nbsp;Les prix étaient 100% raisonnables et honnêtes!&nbsp;»</blockquote><figcaption><strong>Kelly P</strong><span>Avis Google · 5/5</span></figcaption></figure></div><p class="reviews-note">Extraits d’avis publiés sur Google.</p></div></section>
 <section class="contact" id="contact"><div class="wrap contact-grid"><div class="contact-info"><div class="kicker">Nous joindre</div><h2>Parlons de<br>votre véhicule.</h2><p>Appelez-nous ou utilisez le formulaire pour nous décrire les travaux souhaités. Pour une estimation, des photos des dommages peuvent être utiles.</p><div class="info-row"><div class="info-symbol">☎</div><div><strong>Téléphone</strong><span><a href="tel:+14509564040">450 956-4040</a></span></div></div><div class="info-row"><div class="info-symbol">⌖</div><div><strong>Adresse</strong><span>1048 chemin Denison Est<br>Shefford (Québec) J2M 1Y7</span></div></div><div class="info-row"><div class="info-symbol">✉</div><div><strong>Courriel</strong><span><a href="mailto:garageshefford@gmail.com">garageshefford@gmail.com</a></span></div></div><div class="info-row"><div class="info-symbol" aria-hidden="true">◷</div><div><strong>Heures d’ouverture</strong><span>Lundi au vendredi : 9 h à 17 h<br>Fermé le samedi et le dimanche</span></div></div><div class="info-row"><div class="info-symbol">↗</div><div><strong>Territoire desservi</strong><span>Shefford, Bromont, Granby et environs</span></div></div></div>
-<form class="form-card" id="estimate-form" action="https://formsubmit.co/garageshefford@gmail.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_subject" value="Nouvelle demande d’estimation — Carrosserie &amp; Peinture Shefford"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://carrosserieshefford.com/?demande=envoyee#contact"><div style="display:none" aria-hidden="true"><label>Votre site Web<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div><h3>Demande d'estimation</h3><p>Remplissez les champs ci-dessous. Les champs marqués d'un * sont obligatoires.</p><div class="form-grid"><div class="field"><label for="name">Nom complet *</label><input id="name" name="name" required maxlength="100" autocomplete="name" placeholder="Votre nom"></div><div class="field"><label for="phone">Téléphone *</label><input id="phone" name="phone" required maxlength="40" autocomplete="tel" type="tel" placeholder="450 000-0000"></div><div class="field"><label for="email">Courriel *</label><input id="email" name="email" required maxlength="254" autocomplete="email" type="email" placeholder="vous@exemple.com"></div><div class="field"><label for="service">Service recherché</label><select id="service" name="service"><option value="">Choisir un service</option><option>Débosselage sans peinture</option><option>Carrosserie et peinture</option><option>Pellicule pare-pierre / PPF</option><option>Esthétique automobile</option><option>Retour de location</option><option>VGA / redressement de châssis</option><option>Autre</option></select></div><div class="field full"><label for="message">Parlez-nous des travaux *</label><textarea id="message" name="message" required maxlength="5000" placeholder="Décrivez les dommages ou les travaux souhaités..."></textarea></div><div class="field full"><label for="photos">Photos du véhicule (facultatif)</label><div id="photo-list"><div class="photo-row"><input id="photos" name="attachment" type="file" accept="image/jpeg,image/png,image/webp" aria-label="Photo 1"></div></div><button class="photo-add" id="add-photo" type="button">+ Ajouter une photo</button><span class="hint">Jusqu’à 5 photos (JPEG, PNG ou WebP), 10 Mo au total.</span></div><div class="field full"><button class="btn" type="submit">Envoyer ma demande ↗</button><div class="form-message" id="form-message" role="status" aria-live="polite" tabindex="-1"></div><p class="hint form-privacy">Vos coordonnées et photos seront transmises à notre équipe via FormSubmit pour répondre à votre demande.</p></div></div></form></div></section>
+<form class="form-card" id="estimate-form" action="https://formsubmit.co/garageshefford@gmail.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_subject" value="Nouvelle demande d’estimation — Carrosserie &amp; Peinture Shefford"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://carrosserieshefford.com/?demande=envoyee#contact"><div style="display:none" aria-hidden="true"><label>Votre site Web<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div><h3>Demande d'estimation</h3><p>Remplissez les champs ci-dessous. Les champs marqués d'un * sont obligatoires.</p><div class="form-grid"><div class="field"><label for="name">Nom complet *</label><input id="name" name="name" required maxlength="100" autocomplete="name" placeholder="Votre nom"></div><div class="field"><label for="phone">Téléphone *</label><input id="phone" name="phone" required maxlength="40" autocomplete="tel" type="tel" placeholder="450 000-0000"></div><div class="field"><label for="email">Courriel *</label><input id="email" name="email" required maxlength="254" autocomplete="email" type="email" placeholder="vous@exemple.com"></div><div class="field"><label for="service">Service recherché</label><select id="service" name="service"><option value="">Choisir un service</option><option>Débosselage sans peinture</option><option>Carrosserie et peinture</option><option>Pellicule pare-pierre / PPF</option><option>Esthétique automobile</option><option>Retour de location</option><option>VGA / redressement de châssis</option><option>Autre</option></select></div><div class="field full"><label for="message">Parlez-nous des travaux *</label><textarea id="message" name="message" required maxlength="5000" placeholder="Décrivez les dommages ou les travaux souhaités..."></textarea></div><div class="field full"><label for="photos">Photos du véhicule *</label><input id="photos" name="attachment" type="file" accept="image/jpeg,image/png,image/webp" multiple required aria-describedby="photo-hint photo-count"><span class="hint" id="photo-hint">Sélectionnez de 1 à 5 photos en une seule fois (JPEG, PNG ou WebP), 10 Mo au total. Au moins une photo est obligatoire.</span><span class="hint" id="photo-count" aria-live="polite"></span></div><div class="field full"><button class="btn" type="submit">Envoyer ma demande ↗</button><div class="form-message" id="form-message" role="status" aria-live="polite" tabindex="-1"></div><p class="hint form-privacy">Vos coordonnées et photos seront transmises à notre équipe via FormSubmit pour répondre à votre demande.</p></div></div></form></div></section>
 </main>
 <section class="social-band" aria-labelledby="social-band-title"><div class="wrap social-band-inner"><div><div class="kicker">Restons en contact</div><h2 id="social-band-title">Suivez-nous.</h2><p>Retrouvez Carrosserie &amp; Peinture Shefford sur Facebook et Instagram.</p></div><div class="social-band-links"><a class="social-band-link" href="https://www.facebook.com/61567995513589" target="_blank" rel="noopener noreferrer" aria-label="Facebook — ouvre un nouvel onglet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M14 21v-8h3l.5-4H14V7c0-1 .3-1.5 1.5-1.5H18V2.2C17.5 2.1 16.5 2 15.2 2 12.2 2 10 3.9 10 7.4V9H7v4h3v8h4Z"/></svg><span>Facebook</span><span aria-hidden="true">↗</span></a><a class="social-band-link" href="https://www.instagram.com/garageshefford" target="_blank" rel="noopener noreferrer" aria-label="Instagram — ouvre un nouvel onglet"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span><span aria-hidden="true">↗</span></a></div></div></section>
 <footer><div class="wrap footer-inner"><div><a class="brand" href="#accueil"><span class="brand-mark">CP</span><span>CARROSSERIE <span style="color:#ff725c">& PEINTURE</span><small>SHEFFORD · QUÉBEC</small></span></a><p class="footer-hours">Lundi au vendredi : 9 h à 17 h · Fermé la fin de semaine.</p><p>© <span id="year"></span> Carrosserie & Peinture Shefford. Tous droits réservés.</p></div><div class="links"><a href="#services">Services</a><a href="#apropos">À propos</a><a href="#contact">Contact</a><a href="tel:+14509564040">450 956-4040</a></div></div></footer>
@@ -278,8 +273,8 @@ footer .links { display:flex; flex-wrap:wrap; gap:18px; color:#d5dcdf; font-size
 document.getElementById('year').textContent = new Date().getFullYear();
 (function () {
   const form = document.getElementById('estimate-form');
-  const photoList = document.getElementById('photo-list');
-  const addPhoto = document.getElementById('add-photo');
+  const photos = document.getElementById('photos');
+  const photoCount = document.getElementById('photo-count');
   const message = document.getElementById('form-message');
   const submit = form.querySelector('button[type="submit"]');
   const serviceParams = new URLSearchParams(window.location.search);
@@ -293,7 +288,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
   }
   const maxPhotos = 5;
   const maxBytes = 10000000;
-  let photoNumber = 1;
   function showMessage(text, isError) {
     message.textContent = text;
     message.style.display = 'block';
@@ -301,52 +295,36 @@ document.getElementById('year').textContent = new Date().getFullYear();
     message.focus();
   }
   function validatePhotos() {
-    const inputs = photoList.querySelectorAll('input[type="file"]');
-    let bytes = 0;
-    for (const input of inputs) {
-      input.setCustomValidity('');
-      for (const file of input.files) {
-        if (!/\.(jpe?g|png|webp)$/i.test(file.name) || (file.type && !['image/jpeg', 'image/png', 'image/webp'].includes(file.type))) {
-          input.setCustomValidity('Veuillez choisir une photo JPEG, PNG ou WebP.');
-          return 'Veuillez choisir des photos JPEG, PNG ou WebP.';
-        }
-        bytes += file.size;
-      }
+    const files = Array.from(photos.files);
+    let error = '';
+    if (!files.length) error = 'Veuillez ajouter au moins une photo du véhicule.';
+    else if (files.length > maxPhotos) error = 'Veuillez sélectionner un maximum de 5 photos.';
+    else if (files.some(function (file) {
+      return !/\.(jpe?g|png|webp)$/i.test(file.name) || (file.type && !['image/jpeg', 'image/png', 'image/webp'].includes(file.type));
+    })) error = 'Veuillez choisir des photos JPEG, PNG ou WebP.';
+    else if (files.reduce(function (bytes, file) { return bytes + file.size; }, 0) > maxBytes) {
+      error = 'Vos photos dépassent 10 Mo au total. Choisissez des fichiers plus petits ou sélectionnez moins de photos.';
     }
-    if (bytes > maxBytes) return 'Vos photos dépassent 10 Mo au total. Choisissez des fichiers plus petits ou retirez une photo.';
-    return '';
+    photos.setCustomValidity(error);
+    return error;
   }
-  photoList.addEventListener('change', function () {
+  photos.addEventListener('change', function () {
+    const count = photos.files.length;
+    photoCount.textContent = count ? count + (count === 1 ? ' photo sélectionnée.' : ' photos sélectionnées.') : '';
     const error = validatePhotos();
     if (error) showMessage(error, true);
     else message.style.display = 'none';
   });
-  addPhoto.addEventListener('click', function () {
-    if (photoList.querySelectorAll('input[type="file"]').length >= maxPhotos) return;
-    photoNumber += 1;
-    const row = document.createElement('div');
-    row.className = 'photo-row';
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.name = 'attachment' + photoNumber;
-    input.accept = 'image/jpeg,image/png,image/webp';
-    input.setAttribute('aria-label', 'Photo supplémentaire');
-    const remove = document.createElement('button');
-    remove.type = 'button';
-    remove.className = 'photo-remove';
-    remove.textContent = 'Retirer';
-    remove.addEventListener('click', function () {
-      row.remove();
-      addPhoto.disabled = false;
-      const error = validatePhotos();
-      if (error) showMessage(error, true);
-      else message.style.display = 'none';
-      addPhoto.focus();
+  photos.addEventListener('invalid', function () {
+    const error = validatePhotos();
+    if (error) showMessage(error, true);
+  });
+  form.addEventListener('formdata', function (event) {
+    // Keep a separate attachment field per photo for FormSubmit.
+    event.formData.delete('attachment');
+    Array.from(photos.files).forEach(function (file, index) {
+      event.formData.append(index === 0 ? 'attachment' : 'attachment' + (index + 1), file, file.name);
     });
-    row.append(input, remove);
-    photoList.appendChild(row);
-    addPhoto.disabled = photoList.querySelectorAll('input[type="file"]').length >= maxPhotos;
-    input.focus();
   });
   ['name', 'message'].forEach(function (id) {
     const input = document.getElementById(id);
