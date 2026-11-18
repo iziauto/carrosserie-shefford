@@ -2,3 +2,10 @@ User-agent: *
 Allow: /
 
 Sitemap: https://carrosserieshefford.com/sitemap.xml
+
+# Owner-authorized Google AI training and Gemini grounding access.
+# Google merges matching groups and uses Allow for equal-length conflicts,
+# including a Cloudflare-managed Disallow: / for this same product token.
+User-agent: Google-Extended
+Content-Signal: search=yes,ai-input=yes,ai-train=yes,use=full
+Allow: /
