@@ -45,3 +45,6 @@
 /debosselage-sans-peinture/ /debosselage-sans-peinture-dsp 301
 /protection-pare-pierre /protection-pare-pierre-pellicule 301
 /protection-pare-pierre/ /protection-pare-pierre-pellicule 301
+
+# Canonical FAQ path.
+/faq/ /faq 301
