@@ -207,7 +207,8 @@ header nav a[href="/faq"]{display:inline-block}
 .faq-topics a,.dsp-breadcrumbs a{display:inline-block}
 @media(max-width:560px){.faq-topics{align-items:stretch}.faq-topics a{flex:1 1 100%}}
 </style>
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -217,7 +218,7 @@ header nav a[href="/faq"]{display:inline-block}
       "url": "https://carrosserieshefford.com/",
       "telephone": "+1-450-956-4040",
       "email": "garageshefford@gmail.com",
-      "description": "Atelier de carrosserie et de peinture automobile à Shefford. Débosselage sans peinture et protection pare-pierre pour Shefford, Bromont, Granby et environs.",
+      "description": "Atelier de carrosserie et peinture automobile à Shefford, près de Bromont et Granby. Réparation de rouille et de bas de caisse, débosselage sans peinture et protection pare-pierre.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1048 chemin Denison Est",
@@ -258,7 +259,58 @@ header nav a[href="/faq"]{display:inline-block}
         "https://www.facebook.com/61567995513589",
         "https://www.instagram.com/garageshefford"
       ],
-      "image": "https://carrosserieshefford.com/assets/images/home/CarrosseriePeintureShefford.jpeg"
+      "image": "https://carrosserieshefford.com/assets/images/home/CarrosseriePeintureShefford.jpeg",
+      "hasMap": "https://www.google.com/maps/place/Carrosserie+Peinture+Shefford/@45.3819315,-72.6529136,17z/data=!4m8!3m7!1s0x4cc9d134112291f9:0xee387b498bbe7837!8m2!3d45.3819315!4d-72.6529136!9m1!1b1!16s%2Fg%2F11wg3wqjmn?entry=ttu&g_ep=EgoyMDI2MTAxMy4wIKXMDSoASAFQAw%3D%3D",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services de Carrosserie & Peinture Shefford",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Carrosserie et peinture automobile",
+              "url": "https://carrosserieshefford.com/carrosserie-peinture-automobile",
+              "provider": {
+                "@id": "https://carrosserieshefford.com/#atelier"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Réparation de rouille et bas de caisse",
+              "url": "https://carrosserieshefford.com/carrosserie-peinture-automobile#reparation-rouille-golf",
+              "provider": {
+                "@id": "https://carrosserieshefford.com/#atelier"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Débosselage sans peinture (DSP)",
+              "url": "https://carrosserieshefford.com/debosselage-sans-peinture-dsp",
+              "provider": {
+                "@id": "https://carrosserieshefford.com/#atelier"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Protection pare-pierre (PPF)",
+              "url": "https://carrosserieshefford.com/protection-pare-pierre-pellicule",
+              "provider": {
+                "@id": "https://carrosserieshefford.com/#atelier"
+              }
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "FAQPage",
@@ -411,7 +463,8 @@ header nav a[href="/faq"]{display:inline-block}
       ]
     }
   ]
-}</script><style>
+}
+</script><style>
 .faq-intro{padding:56px 0 46px;background:var(--surface)}
 .faq-intro h1{font-size:clamp(38px,6vw,68px);max-width:900px;line-height:1.08;margin:25px 0}
 .faq-intro p{max-width:720px;color:var(--muted);font-size:18px;line-height:1.8}
