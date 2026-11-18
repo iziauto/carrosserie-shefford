@@ -51,3 +51,6 @@
 
 # Canonical bodywork and painting service path.
 /carrosserie-peinture-automobile/ /carrosserie-peinture-automobile 301
+
+# Canonical rust repair service path.
+/reparation-rouille/ /reparation-rouille 301
